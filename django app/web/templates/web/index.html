@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+  <title>Datastore and Firebase Auth Example</title>
+</head>
+<body>
+
+  <h1>Subscribed Users</h1>
+  <!-- [START gae_python38_datastore_print_times] -->
+  <h2>Subscribed Users</h2>
+  {% for user in users %}
+      <p><a href="/chat/{{ user.id }} ">{{ user.name }}</a></p>
+  {% endfor %}
+  <!-- [END gae_python38_datastore_print_times] -->
+</body>
+</html>
+
